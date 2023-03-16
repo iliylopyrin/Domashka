@@ -14,37 +14,38 @@ public class Main {
         double pensionerSum = 0;
         int  adultSum = 0;
         double childrenSum = 0;
-        
+
        // само задание:
         // найти сколько стоит билет, и посчитать сумму билетов
 
         // билеты
-        int adultsBilet = 70;
-        double childrenBilet = 70 - adultsBilet * 0.5;
-        double pensionerBilet = 70 - adultsBilet * 0.3;
+        int adultsBillet = 70;
+        double childrenBillet = 70 - adultsBillet * 0.5;
+        double pensionerBillet = 70 - adultsBillet * 0.3;
 
 
 
         // циклы
         while ( adults >= adult ){
-            adultSum = adultSum + adultsBilet;
+            adultSum = adultSum + adultsBillet;
             adult ++;
         }
         while (pensioner<= pensioners) {
-            pensionerSum = pensionerSum + pensionerBilet;
+            pensionerSum = pensionerSum + pensionerBillet;
             pensioner ++;
 
 
         }
         while (children <= childrens ) {
-            childrenSum = childrenSum + childrenBilet;
+            childrenSum = childrenSum + childrenBillet;
             children ++;
 
 
         }
         // ну и сама суть
-        System.out.println(adult + "за ребенка");
-
+        System.out.println(adultsBillet + " " + "за взрослого");
+        System.out.println(pensionerBillet + " " + "за пенсионера");
+        System.out.println(childrenBillet + " " + "за ребенка");
         double sum = adultSum + childrenSum + pensionerSum;
 
         System.out.println(sum);
